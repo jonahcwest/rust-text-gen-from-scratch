@@ -1,0 +1,12 @@
+[package]
+name = "nn2"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[features]
+no_blas = []
+
+[dependencies]
+libc = "0"
+rand = { version = "0", features = [ "small_rng" ] }
